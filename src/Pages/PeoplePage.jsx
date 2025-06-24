@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PeopleCard from "../Components/PeopleCard";
 import axios from "axios";
+import { Button, Col, Form, Row } from 'react-bootstrap';
 
 const PeoplePage = () => {
 
@@ -28,6 +29,22 @@ const PeoplePage = () => {
 
     return <div className="d-flex flex-column justify-content-center align-items-center">
     <h1>People Page</h1>
+
+        <Form >
+            <Row>
+                <Col xs="auto">
+                    <Form.Control
+                    type="text"
+                    placeholder="Search"
+                    className=" mr-sm-2"
+                    />
+                </Col>
+                <Col xs="auto">
+                    <Button type="submit">Submit</Button>
+                </Col>
+            </Row>
+        </Form>
+
     <div className="d-flex flex-wrap justify-content-around align-content-center gap-5 col-8">
     {people.map((people) => {
         return <PeopleCard key={people.id} peopleC={people}/>
