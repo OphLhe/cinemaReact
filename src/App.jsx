@@ -3,10 +3,11 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
-import PeoplesPage from './Pages/PeoplesPage';
+import PeoplePage from './Pages/PeoplePage';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import MovieDetailsPage from './Pages/MovieDetailsPage';
+import PeopleDetailsPage from './Pages/peopleDetailsPage';
 
 function App() {
  
@@ -19,11 +20,12 @@ function App() {
     {/* pour la route / j'affiche mon titre HomePgae */}
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        {/* Pour la route /peoples j'affiche mon titre PeoplePage */}
-        <Route path='/peoples' element={<PeoplesPage/>}/>
+        {/* Pour la route /people j'affiche mon titre PeoplePage */}
+        <Route path='/people' element={<PeoplePage/>}/>
         {/* Pour la route /details/:id j'affiche mon titre MovieDetailPage */}
         {/* :id est un paramètre dynamique qui peut être utilisé pour afficher les détails d'un film spécifique */}
         <Route path='/details/:id' element={<MovieDetailsPage/>}/>
+        <Route path='/details/people/:id' element ={<PeopleDetailsPage/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

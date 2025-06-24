@@ -15,9 +15,9 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={() => {navigate("/")}}>Accueil</Nav.Link>
-            <Nav.Link onClick={() => {navigate("/peoples")}}>Peoples</Nav.Link>
+            <Nav.Link onClick={() => {navigate("/people")}}>People</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Peoples</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">people</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
