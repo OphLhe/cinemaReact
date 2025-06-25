@@ -8,6 +8,9 @@ import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import MovieDetailsPage from './Pages/MovieDetailsPage';
 import PeopleDetailsPage from './Pages/peopleDetailsPage';
+import './styles/homePage.css';
+import './styles/peoplePage.css';
+
 
 function App() {
  
@@ -25,6 +28,8 @@ function App() {
         {/* Pour la route /details/:id j'affiche mon titre MovieDetailPage */}
         {/* :id est un paramètre dynamique qui peut être utilisé pour afficher les détails d'un film spécifique */}
         <Route path='/details/:id' element={<MovieDetailsPage/>}/>
+        {/* Pour la route /details/people/:id j'affiche mon titre PeopleDetailPage */}
+        {/* :id est un paramètre dynamique qui peut être utilisé pour afficher les détails d'un acteur.ice spécifique */}
         <Route path='/details/people/:id' element ={<PeopleDetailsPage/>}/>
       </Routes>
       <Footer/>

@@ -1,0 +1,16 @@
+.searchBar{
+    width: 50rem;
+    margin-top: 1%;
+}
+
+.pagination{
+    margin: 0% 5%;
+}
+
+.pageButton{
+    width:20rem;
+}
+
+.previousButton , .nextButton{
+    border: none;
+}
